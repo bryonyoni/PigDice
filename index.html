@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pig-Dice</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Risque|Ewert" rel="stylesheet">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+  <div id="header">
+      <p>PIG DICE</p>
+  </div>
+  <div id="instructions">
+    <h1>How to play</h1>
+    <p>The rules are simple:</p>
+    <ul>
+      <li>Press roll to rolll. </li>
+      <li>If you roll a 1,you lose everything and start again.</li>
+      <li>Hold to retain cumulated points.</li>
+      <li>First to 100 wins.</li>
+      <li>May luck fortune the best!</li>
+    </ul>
+  <button class="button"><span>Start </span></button>
+  </div>
+<div id="game">
+  <div class="col-md-4" id="player1">
+      <p>PLAYER1</p>
+      <div id="player1wins"></div>
+      <div id="player1score"></div>
+      <div id="player1buttons">
+          <button id="roll">roll!</button>
+          <button id="hold">hold!</button>
+      </div>
+  </div>
+
+  <div class="col-md-4" id="board">
+      <p>Roll:<span id="dice"></span></p>
+      <p>current Score  :<span id="current"></span> </p>
+  </div>
+
+  <div class="col-md-4" id="player2">
+      <p>PLAYER2</p>
+      <div id="player2wins"></div>
+      <div id="player2score"></div>
+      <div id="player2buttons">
+          <button id="roll">roll!</button>
+          <button id="hold">hold!</button>
+      </div>
+  </div>
+</div>
+
+
+
+
+</body>
+
+</html>
