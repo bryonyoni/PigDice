@@ -1,5 +1,4 @@
-var PigDice = { player1: 0,player2: 0,currentScore: 0,activePlayer: 1,
-  rollDice: function(){
+  rollDice= function(){
     var roll = Math.floor(Math.random() * 6) + 1;
     if (roll === 1) {
       this.currentScore = 0;
@@ -9,8 +8,8 @@ var PigDice = { player1: 0,player2: 0,currentScore: 0,activePlayer: 1,
       this.currentScore += roll;
     }
     return roll;
-  },
-  switchPlayer: function(){
+  }
+  switchPlayer=function(){
     if(this.activePlayer === 1){
       this.player1 += this.currentScore;
       this.activePlayer = 2;
@@ -18,12 +17,13 @@ var PigDice = { player1: 0,player2: 0,currentScore: 0,activePlayer: 1,
       this.player2 += this.currentScore;
       this.activePlayer = 1;
     }
-  },
-  hold: function(){
+  }
+  hold=function(){
     this.switchPlayer();
     this.currentScore = 0;
   }
-};
+
+  var PigDice = { player1: 0,player2: 0,currentScore: 0,activePlayer: 1,rollDice:rollDice,switchPlayer:switchPlayer,hold:hold};
 
 $(document).ready(function(){
   $(".button").click(function(){
